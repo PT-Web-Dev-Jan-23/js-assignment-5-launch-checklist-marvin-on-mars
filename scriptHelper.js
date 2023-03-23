@@ -55,18 +55,18 @@ if (Number(fuelLevel) < 10000) {
     list.style.visibility = `Visible`
     launchStatus.innerHTML = `Shuttle not ready for launch`;
     launchStatus.style.color = `red`;
-} else if (Number(cargoLevel) > 10000) {
+    } else if (Number(cargoLevel) > 10000) {
     cargoStatus.innerHTML = `Cargo too heavy for takeoff`;
     list.style.visibility = `visible`;
     launchStatus.innerHTML = `Shuttle not ready for launch`;
     launchStatus.style.color = `red`;
-} else if (Number(cargoLevel) < 10000 && Number(fuelLevel) > 10000) {
+    } else if (Number(cargoLevel) < 10000 && Number(fuelLevel) > 10000) {
     list.style.visibility = `visible`;
     fuelStatus.innerHTML = `Enough fuel for journey`;
     cargoStatus.innerHTML = `Cargo light enough for takeoff`;
     launchStatus.innerHTML = `Shuttle ready for launch`;
     launchStatus.style.color = `green`;
-}
+    }
 }
 async function myFetch() {
     let planetsReturned;
