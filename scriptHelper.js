@@ -48,7 +48,7 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
     copilotStatus.innerHTML = `Co-pilot ${copilot} is ready`;
     list.style.visibility = 'hidden';
     }
-}
+
 
 if (Number(fuelLevel) < 10000) {
     fuelStatus.innerHTML = `Not enough fuel for journey`;
@@ -67,7 +67,7 @@ if (Number(fuelLevel) < 10000) {
     launchStatus.innerHTML = `Shuttle ready for launch`;
     launchStatus.style.color = `green`;
 }
-
+}
 async function myFetch() {
     let planetsReturned;
 
